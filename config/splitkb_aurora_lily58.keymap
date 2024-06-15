@@ -70,6 +70,20 @@
         };
     };
 
+    macros {
+
+        pwcunm: pwcu {
+            label = "PWCUSERNAME";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+            bindings
+                = <&macro_tap &kp S &kp R &kp E &kp E &kp R &kp A &kp J &kp DOT &kp M &kp DOT &kp S &kp A &kp S &kp I &kp AT &kp P &kp W &kp C &kp DOT &kp C &kp O &kp M &kp TAB>
+                ; 
+        };
+    };
+
     combos {            
         compatible = "zmk,combos";
             combo_ctrlbspc {
@@ -99,7 +113,7 @@
             bindings = <
                 &bt BT_CLR    &kp F1 &kp F2 &kp F3   &kp F4   &kp F5                     &kp F6 &kp F7   &kp F8    &kp F9  &kp F10   &trans
                 &trans    &trans  &trans  &mkp MB1   &mkp MB2    &kp PG_UP                      &trans  &kp LBKT    &kp RBKT     &trans   &kp PSCRN    &trans
-                &trans    &trans  &trans  &kp LSHFT    &kp LCTRL    &kp PG_DN                      &kp HOME  &kp LEFT    &kp DOWN     &kp UP   &kp RIGHT &kp END
+                &trans    &kp LALT  &pwcunm  &kp LSHFT    &kp LCTRL    &kp PG_DN                      &kp HOME  &kp LEFT    &kp DOWN     &kp UP   &kp RIGHT &kp END
                 &trans    &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)    &trans  &trans   &trans &trans  &td_minund    &kp EQUAL &kp PLUS &trans &trans
                                         &trans &mo ADJUST &trans  &trans  &trans  &trans  &trans &trans
             >;
