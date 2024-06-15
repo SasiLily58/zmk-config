@@ -34,13 +34,13 @@
         left_encoder_rotate: left_encoder_rotate {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+            bindings = <&kp C_VOL_DN>, <&kp C_VOL_UP>;
         };
 
         right_encoder_rotate: right_encoder_rotate {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
+            bindings = <&bt BT_PRV>, <&bt BT_NXT>;
         };
 
         td_stcp: tap_dance_shift_caps {
@@ -57,11 +57,11 @@
 
         default_layer {
             bindings = <
-                &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
-                &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
-                &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
-                &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                        &kp LALT &kp LGUI &mo LOWER  &kp SPACE  &kp RET  &mo RAISE  &kp BSPC &kp RGUI
+                &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp DEL
+                &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &none
+                &kp LGUI  &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
+                &td_stcp &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &td_stcp
+                                        &kp LALT &mo LOWER &LCTRL  &kp BSPC  &kp SPACE  &kp ENTER  &mo RAISE &none
             >;
 
             sensor-bindings = <&left_encoder_rotate &right_encoder_rotate>;
@@ -73,7 +73,7 @@
                 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
                 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                        &kp LALT &kp LGUI &mo ADJUST  &kp SPACE  &kp RET  &trans  &kp BSPC &kp RGUI
+                                        &kp LALT &mo ADJUST &none  &kp SPACE  &kp RET  &none  &trans &kp RGUI
             >;
         };
 
@@ -83,7 +83,7 @@
                 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
                 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                        &kp LALT &kp LGUI &trans  &kp SPACE  &kp RET  &mo ADJUST  &kp BSPC &kp RGUI
+                                        &kp LALT &trans &none  &kp SPACE  &kp RET  &none &ADJUST &kp RGUI
             >;
         };
 
@@ -93,7 +93,7 @@
                 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
                 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                        &kp LALT &kp LGUI &trans  &kp SPACE  &kp RET  &trans  &kp BSPC &kp RGUI
+                                        &kp LALT &trans &trans  &kp SPACE  &kp RET  &trans  &trans &kp RGUI
             >;
         };   
     };
