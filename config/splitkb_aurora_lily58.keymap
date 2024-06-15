@@ -38,6 +38,12 @@
             bindings = <&kp>, <&kp>;
         };
 
+        rot_bt: sensor_rotate_bt {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&bt>, <&bt>;
+        };
+
         left_encoder_rotate: left_encoder_rotate {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -113,7 +119,7 @@
                                         &kp LALT &mo LOWER &kp LCTRL  &kp BSPC  &kp SPACE  &kp ENTER  &mo RAISE &pht LC(LA(DEL)) LG(L)
             >;
 
-            sensor-bindings = <&rot_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&rot_kp C_VOL_DN C_VOL_UP &rot_bt BT_PRV BT_NXT>;
         };
 
         RAISE_layer {
