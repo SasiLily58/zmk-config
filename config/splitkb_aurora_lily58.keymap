@@ -88,7 +88,7 @@
                 &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp DEL
                 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp BSLH
                 &kp LEFT_GUI  &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
-                &td_stcp &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &out OUT_TOG &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &td_stcp
+                &td_stcp &kp Z  &kp X  &kp C    &kp V    &kp B  &kp C_MUTE   &out OUT_TOG &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &td_stcp
                                         &kp LALT &mo LOWER &kp LCTRL  &kp BSPC  &kp SPACE  &kp ENTER  &mo RAISE &pht LC(LA(DEL)) LG(L)
             >;
 
@@ -98,7 +98,7 @@
         RAISE_layer {
             bindings = <
                 &bt BT_CLR    &kp F1 &kp F2 &kp F3   &kp F4   &kp F5                     &kp F6 &kp F7   &kp F8    &kp F9  &kp F10   &trans
-                &trans    &trans  &trans  &trans    &trans    &kp PG_UP                      &trans  &kp LBKT    &kp RBKT     &trans   &trans    &trans
+                &trans    &trans  &trans  &mkp MB1   &mkp MB2    &kp PG_UP                      &trans  &kp LBKT    &kp RBKT     &trans   &kp PSRCN    &trans
                 &trans    &trans  &trans  &kp LSHFT    &kp LCTRL    &kp PG_DN                      &kp HOME  &kp LEFT    &kp DOWN     &kp UP   &kp RIGHT &kp END
                 &trans    &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)    &trans  &trans   &trans &trans  &td_minund    &kp EQUAL &kp PLUS &trans &trans
                                         &trans &mo ADJUST &trans  &trans  &trans  &trans  &trans &trans
