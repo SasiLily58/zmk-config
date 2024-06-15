@@ -73,10 +73,8 @@
                 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
                 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                        &kp LALT &kp LGUI &mo ADJUST  &kp SPACE  &kp RET  &mo trans  &kp BSPC &kp RGUI
+                                        &kp LALT &kp LGUI &mo ADJUST  &kp SPACE  &kp RET  &trans  &kp BSPC &kp RGUI
             >;
-
-            sensor-bindings = <&left_encoder_rotate &right_encoder_rotate>;
         };
 
         LOWER_layer {
@@ -85,10 +83,8 @@
                 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
                 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                        &kp LALT &kp LGUI &mo trans  &kp SPACE  &kp RET  &mo ADJUST  &kp BSPC &kp RGUI
+                                        &kp LALT &kp LGUI &trans  &kp SPACE  &kp RET  &mo ADJUST  &kp BSPC &kp RGUI
             >;
-
-            sensor-bindings = <&left_encoder_rotate &right_encoder_rotate>;
         };
 
         ADJUST_layer {
@@ -97,10 +93,8 @@
                 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
                 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                        &kp LALT &kp LGUI &mo trans  &kp SPACE  &kp RET  &mo trans  &kp BSPC &kp RGUI
+                                        &kp LALT &kp LGUI &trans  &kp SPACE  &kp RET  &trans  &kp BSPC &kp RGUI
             >;
-
-            sensor-bindings = <&left_encoder_rotate &right_encoder_rotate>;
         };   
     };
 };
