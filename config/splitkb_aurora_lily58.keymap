@@ -119,7 +119,7 @@
                                         &kp LALT &mo LOWER &kp LCTRL  &kp BSPC  &kp SPACE  &kp ENTER  &mo RAISE &pht LC(LA(DEL)) LG(L)
             >;
 
-            sensor-bindings = <&rot_kp C_VOL_DN C_VOL_UP &rot_bt BT_PRV BT_NXT>;
+            sensor-bindings = <&rot_kp C_VOL_DN C_VOL_UP>;
         };
 
         RAISE_layer {
