@@ -38,12 +38,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        left_encoder_rotate: left_encoder_rotate {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, <&kp C_VOL_UP>;
-        };
-
         right_encoder_rotate: right_encoder_rotate {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -124,6 +118,8 @@
                 &trans    &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)    &trans  &trans   &trans &trans  &td_minund    &kp EQUAL &kp PLUS &trans &trans
                                         &trans &mo ADJUST &trans  &trans  &trans  &trans  &trans &trans
             >;
+
+            sensor-bindings = <&rot_kp C_BRI_DEC C_BRI_INC &right_encoder_rotate>;
         };
 
         LOWER_layer {
